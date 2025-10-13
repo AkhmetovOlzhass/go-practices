@@ -57,7 +57,7 @@ func (a *App) Run() error {
         fmt.Printf("🔍 Пользователь по ID %d: %s | %.2f\n", oneUser.ID, oneUser.Name, oneUser.Balance)
     }
 
-    fmt.Println("\nТестируем перевод 100.00 от Alice к Olzhas")
+    fmt.Println("\nТестируем перевод 100.00 от Olzhas к Anelya")
     err = repo.TransferBalance(users[0].ID, users[1].ID, 100.00)
     if err != nil {
         return fmt.Errorf("transfer error: %w", err)
